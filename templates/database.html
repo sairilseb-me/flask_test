@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Database</h2>
+                <form action="/create-db" method="POST">
+                    <button type="submit" class="btn btn-primary">Create Table</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hello {{ user.username }}</h1>
+    <div class="d-flex">
+        <a href="/user-edit/{{ user.id }}" class="btn btn-primary me-2">Edit</a>
+        <form action="/user-delete/{{ user.id }}" method="DELETE">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    
+{% endblock %}

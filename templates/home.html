@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>This is the hompage</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit molestiae quo doloremque nobis! Rerum pariatur iure provident incidunt repellat, ex quaerat, quibusdam tenetur facere deleniti minus quod earum quis cum!</p>
+    {% if sunny %}
+        <p>It's sunny today!</p>
+    {% else %}
+        <p>It's not sunny today!</p>
+    {% endif %}
+
+    {%for post in posts%}
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+
+{% endblock %}
+
+    
