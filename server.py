@@ -140,6 +140,10 @@ def get_flashed_messages():
     return session.get('_flashes', [])
 
 
+def test():
+    return 'Test page'
+
+
 # clear flashed messages
 def clear_flashed_messages():
     session.pop('_flashes', None)
